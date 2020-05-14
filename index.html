@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Editor</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+      <header>Markdown Editor</header>
+      <main>
+          <div class="markdown">
+              <textarea id="inputText">Write your text here..
+                  ![N|Solid](https://images.media-allrecipes.com/userphotos/300x300/1384969.jpg)
+            </textarea>
+              <button id="convertBtn">Convert</button>
+          </div>
+          <div class="result">
+              <div id="resultText"></div>
+          </div>
+      </main>
+    <script src="markdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+  </body>
+</html>
