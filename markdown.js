@@ -32,3 +32,24 @@ function clearTextArea(){
     editedArea.innerHTML=""
     textArea.value="";
 }
+
+function printToPDF(){
+    var pdf=new jsPDF();
+    pdf.fromHTML($('#resultText')[0],20,20);
+    pdf.save("markdown.pdf");
+}
+
+//ignore some tag:
+
+// var specialElementHandlers={
+//     '#editor':function (element,render){
+//         return true;
+//     }
+// };
+// function printToPDF(){
+//     var pdf=new jsPDF();
+//     pdf.fromHTML($('#resultText')[0],20,20,{
+//         elementHandlers:specialElementHandlers
+//     });
+//     pdf.save("markdown.pdf");
+// }
