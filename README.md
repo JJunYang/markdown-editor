@@ -20,4 +20,6 @@ This project used [Showdown.js](https://github.com/showdownjs/showdown) library 
 
 This project used [jsPDF](https://github.com/MrRio/jsPDF) successfully print document to PDF.
 
+This project used [Google font](https://fonts.google.com/).
+
 Also, [html2canvas](http://html2canvas.hertzen.com/) provided a lot of references.
